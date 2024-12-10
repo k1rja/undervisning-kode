@@ -1,0 +1,113 @@
+h1 {
+    font-size:60px; color:brown;
+    font-family: ´Franklin 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body {
+    background-color:bisque;
+    font-size:20px;
+}
+.box1{
+    width:50%;
+    margin:auto;
+    margin-top:15px;
+    margin-bottom:15px;
+    background-color:aliceblue;
+    border-style:dashed;
+    border-color:black;
+    border-width:5px;
+    padding:1.2em;
+}
+.box2{
+    width:10em;
+    margin:2em 20px;
+    padding:1em 10px 1em 10px;
+    background-color:bisque;
+    border-top:10px double #895;
+    border-bottom:10px double #895;
+}
+.box3{
+    margin:2em 150px 1em 100px;
+    padding:15px;
+    background-color:cadetblue;
+    border:10px ridge darkred;
+}
+.box4{
+    width:20em;
+    margin:1px 1em 1px auto;
+    padding:15px;
+    background-color:blueviolet;
+    border:10px dotted white;
+    border-color:blanchedalmond;
+}
+img{
+    float:right;
+    padding:15px;
+}
+.tekst{
+    font-size:20px;
+    margin:0,75em;
+}
+ul{
+    list-style-type:square;font-size:larger;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, Helvetica, sans-serif;
+}
+div{
+    width:100px;
+    height:100px;
+    background-color: #D9161A;
+}
+.universet{
+    width: 100%;
+    height: auto;
+
+}
+@media only screen and (min-width:601px) {
+    body {
+        background-color:cadetblue;
+    }
+@media only screen and (min-width:960px) {
+    body {
+        background-color:white;
+        }
+}
+    }
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+    
+.grid-container {
+    display: grid;
+    grid-template:
+     'header header header header header header'
+     'menu main main main right right'
+     'menu footer footer footer footer footer';
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+    }
+    
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    }
+    
+.container1{
+    border: 5px solid #ffcc5c;
+    display: flex;
+    flex-direction:column;
+    margin-inline: auto;
+    
+
+}
+.container1 > div {
+    text-align: center;
+    line-height:70px;
+    color:black;
+    width: 100%;
+    border:black;
+}
+
